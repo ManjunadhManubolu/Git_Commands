@@ -1,0 +1,42 @@
+1. To create a file through command prompt
+type nul > hello.txt
+
+2.To check in which branch we are in 
+git branch
+
+3.To create a new branch
+git branch NameOfTheBranch
+
+4.To switch from one branch to another
+git checkout BranchNameToWhichWeWantToSwitch
+
+Note:
+When we are satisfied with the unit of work we’ve assembled, we take a snapshot of everything in the staging area. This is called a commit. Stagging aka Index. To stage we use "add & commit" commands.
+
+5.To add specific file
+git add FileName.extension
+
+6.To add all files
+git add .
+
+7.To commit 
+git commit -m "Reason for this commit"
+
+8.To check status
+git status 
+
+9.Send Changes to the Remote Repository
+git push -u origin branchName
+Note: This command will ask credentials to push to GITHUB
+
+10.The git log command enables you to display a list of all of the commits on your current branch. By default, the git log command presents a lot of information all at once.
+
+Use some of the git log modifiers to cultivate an easy-to-read list that provides some valuable information.
+
+git log -10 will only show the 10 most recent commits.
+git log --oneline is a great way to view commit history by displaying the first seven characters of the SHA-1 hash and commit message of the commits on the current branch.
+git log --oneline --graph presents commit history in a ASCII graph displaying the different branches in the repository and their commits.
+git log --oneline --graph --decorate displays the same ASCII graph that is displayed using the --graph modifier, but also includes the branch name(s) for the different commits being displayed.
+
+11. to compare the differences between 2 commits
+git diff 4e3dc9b 0cd75d4
